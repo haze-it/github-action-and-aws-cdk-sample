@@ -7,15 +7,15 @@ export class GithubActionAndAwsCdkSampleStack extends cdk.Stack {
     super(scope, id, props);
     const env = process.env.ENV || 'local';
 
-   // Lambda
+    // Lambda
     const sampleLambda = new lambda.Function(this, 'sampleLambda', {
       runtime    : lambda.Runtime.NODEJS_12_X,
       handler    : 'index.handler',
       code       : lambda.Code.asset('src'),
       timeout    : cdk.Duration.seconds(30),
       environment: {
-        ENV      : env,
-        NODE_ENV : env
+        ENV     : env,
+        NODE_ENV: env
       }
     });
     // コールドスタート対応
