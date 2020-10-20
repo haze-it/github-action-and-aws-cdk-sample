@@ -1,6 +1,6 @@
 import { expect as expectCDK, matchTemplate, MatchStyle } from '@aws-cdk/assert';
 import * as cdk from '@aws-cdk/core';
-import * as GithubActionAndAwsCdkSample from '../lib/github-action-and-aws-cdk-sample-stack';
+import * as GithubActionAndAwsCdkSample from '../lib';
 
 test('Empty Stack', () => {
     const app = new cdk.App();

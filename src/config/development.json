@@ -1,0 +1,6 @@
+{
+  "Lambda" : {
+      "DEV_ENVIRONMENT": "各環境でのenvironment",
+      "DEV_ENVIRONMENT2": "config.get('Lambda.ENV_NAME')で取得できます"
+  }
+}

@@ -1,0 +1,25 @@
+Resources:
+  CDKMetadata:
+    Type: AWS::CDK::Metadata
+    Properties:
+      Modules: aws-cdk=1.69.0,@aws-cdk/cloud-assembly-schema=1.69.0,@aws-cdk/core=1.69.0,@aws-cdk/cx-api=1.69.0,jsii-runtime=node.js/v12.16.3
+    Condition: CDKMetadataAvailable
+  gitHubActionAndAWSCDKSample:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 30
+      CodeUri: src
+      Handler: index.handler
+      Runtime: nodejs12.x
+      Role: 'arn:aws:iam::xxxxxxxxxxxx:role/gitHubActionAndAWSCDKSample'
+      Environment:
+        Variables:
+          ENV: development
+          NODE_ENV: development
+          DEV_ENVIRONMENT: DEV_ENVIRONMENT_NANKA
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /test-path
+            Method: get
