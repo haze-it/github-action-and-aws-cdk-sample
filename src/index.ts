@@ -1,17 +1,16 @@
-import * as config from 'config';
-import { APIGatewayProxyEvent } from 'aws-lambda';
+// import * as config from 'config'; // configを使用する場合はこれ
 
 interface LambdaApiResponse {
   statusCode: number,
   body: string
-};
+}
 
 interface BodyResponse {
   result: string
 }
 
-export async function handler(event: APIGatewayProxyEvent): Promise<LambdaApiResponse> {
-  console.log("TEST");
+export async function handler(): Promise<LambdaApiResponse> {
+  console.log('TEST');
 
   // 好きな処理を書いてね
 
