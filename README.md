@@ -1,3 +1,12 @@
+# GitHub Actions nad AWS CDK Sample
+ - スマートキャンプのテックブログ用に作成したサンプルコードです。
+ - 記事: [https://tech.smartcamp.co.jp/entry/gh-action-and-cdk](https://tech.smartcamp.co.jp/entry/gh-action-and-cdk)
+
+### Thanks
+ - https://dev.classmethod.jp/articles/aws-cdk-ga-serverless-application
+ - https://dev.classmethod.jp/articles/cdk-github-actions
+ - https://bps-tomoya.hateblo.jp/entry/2015/11/06/170000
+
 # Welcome to your CDK TypeScript project!
 
 This is a blank project for TypeScript development with CDK.
